@@ -1,31 +1,4 @@
-
-body{
-    font: 20px, arial, sans-serif;
-    
+body {
+    text-align: center;
+    font-size: 40px;
 }
-
-.navbar {
-    background-color: whitesmoke;
-    
-}
-
-.sobre{
-    background-color: wheat;
-    color: black;
-}
-
-.margin{
-    padding-bottom: 50px;
-    padding-top: 10px;    
-}
-.works{
-    background-color: whitesmoke;
-}
-
-.bg-footer{
-    background-color: wheat;
-    color: black;
-    
-    
-}
-
