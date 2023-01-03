@@ -2,12 +2,16 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /* HEADER */
 .nav {
     background-color: #181818;
@@ -16,6 +20,8 @@ body {
     display: flex;
     justify-content: flex-end;
     position: sticky;
+    top: 0;
+    z-index: 9;
 }
 
 .nav-list {
@@ -67,6 +73,11 @@ body {
     border-radius: 4px;
     font-size: 18px;
     font-weight: bold;
+    transition: 0.9s;
+}
+
+.call-to-action:hover{
+    transform: scale(1.1);
 }
 
 .main a {
@@ -74,3 +85,173 @@ body {
     color: #181818;
 }
 /* FIM MAIN */
+
+
+/* INICIO SOBRE */
+.about {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about img{
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+.about div h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+/* FIM SOBRE */
+
+/* INICIO PROJECT */
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    background-color: #181818;
+    color: #FFFFFF;
+}
+
+.projects h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.projects p {
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.project-list {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects img {
+    width: 22%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+
+.projects img:hover {
+    opacity: 1;
+}
+
+.orcamento {
+    background-color: #696868;
+    color:#FFFFFF;
+    font-size: 22px;
+    border: 0;
+    border-radius: 4px;
+    padding: 14px 28px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.orcamento:hover {
+    transform: scale(1.1);
+}
+/* FIM PROJECT */
+
+/* INICIO RODAPE */
+footer {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #696868;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer p {
+    margin-left: 12px;
+}
+/* FIM RODAPE */
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1050px) {
+    .main h1 {
+        font-size: 45px;
+    }
+
+    .main p {
+        font-size: 18px;
+    }
+
+    .main {
+        background-size: cover;
+    }
+
+    .about {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .about div {
+        max-width: 80%;
+    }
+
+    .about div h2 {
+        font-size: 45px;
+    }
+
+    .about img {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .projects img {
+        width: 27.5%;
+
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer h3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+}
