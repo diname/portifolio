@@ -1,0 +1,61 @@
+.main {
+    width: 100%;
+    
+    height: calc(100vh - 80px);
+    background: url("../../images/blob-scene-haikei.svg") no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10%;
+}
+
+.main h1 {
+    color: #FFFFFF;
+    font-size: 54px;
+}
+.main p {
+    font-size: 24px;
+    font-style: italic;
+    color: #1e96FC;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.call-to-action{
+    cursor: pointer;
+    text-decoration: none;
+    background-color:  #1e96FC;
+    color: #FFF;
+    border: 0;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.9s;
+}
+
+.call-to-action:hover{
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1050px) {
+    .main h1 {
+        font-size: 45px;
+    }
+
+    .main p {
+        font-size: 18px;
+    }
+
+    .main {
+        background-size: cover;
+    }
+
+}
