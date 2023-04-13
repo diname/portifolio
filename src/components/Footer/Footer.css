@@ -1,0 +1,89 @@
+:root{
+    --color-instagram1: #f09433;
+    --color-instagram2: #e6683c;
+    --color-instagram3: #dc2743;
+    --color-instagram4: #cc2366;
+    --color-instagram5: #bc1888;
+}
+
+
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #0f2838;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-image: url("../../images/waves-footer.svg"); */
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer p {
+    width: 200px;
+}
+
+.icons {
+    width: 200px;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+.icons li{
+    list-style: none;
+}
+
+.linkedin:hover {
+    color: #2D82B7;
+    transition: 0.5s;
+}
+
+.github:hover{
+    color: #000;
+    transition: 0.5s;
+}
+
+.instagram:hover{
+    offset: 0%;
+    color: var(--color-instagram1);
+
+    offset: 25%;
+    color: var(--color-instagram2);
+
+    offset: 50%;
+    color: var(--color-instagram3);
+
+    offset: 75%;
+    color: var(--color-instagram4);
+
+    offset: 100%;
+    color: var(--color-instagram5);
+
+    transition: 0.5s;
+}
+
+/* Responsividade */
+
+@media (max-width: 1050px) {
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer h3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+}

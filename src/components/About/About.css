@@ -1,0 +1,58 @@
+.about {
+    background: #0c2231;
+    color: #fff;
+    width: 100%;
+    height: 900px;
+    padding: 80px 10%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about p {
+    font-size: 22px;
+}
+
+.about img{
+    max-width: 450px;
+    border-radius: 25%;
+}
+
+.about div h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 1050px) {
+
+    .about {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .about div {
+        max-width: 80%;
+    }
+
+    .about div h2 {
+        font-size: 45px;
+    }
+
+    .about img {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+}
